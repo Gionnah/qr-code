@@ -32,13 +32,13 @@ export default function QRScanner() {
       >
         <View style={styles.permissionContent}>
           <Ionicons name="camera" size={60} color="white" style={styles.cameraIcon} />
-          <Text style={styles.permissionText}>Nous avons besoin d'accéder à votre caméra</Text>
-          <Text style={styles.permissionSubText}>Pour scanner les badges et profils</Text>
+          <Text style={styles.permissionText}>We need access to your camera</Text>
+          <Text style={styles.permissionSubText}>To scan QR codes</Text>
           <TouchableOpacity 
             style={styles.permissionButton} 
             onPress={requestPermission}
           >
-            <Text style={styles.permissionButtonText}>Autoriser l'accès</Text>
+            <Text style={styles.permissionButtonText}>Allow access</Text>
           </TouchableOpacity>
         </View>
       </LinearGradient>
@@ -83,7 +83,7 @@ export default function QRScanner() {
             <View style={[styles.corner, styles.bottomRight]} />
           </View>
           
-          <Text style={styles.scanText}>Scannez le code QR du badge</Text>
+          <Text style={styles.scanText}>Scan the QR code </Text>
           
           <View style={styles.controls}>
             <TouchableOpacity 
